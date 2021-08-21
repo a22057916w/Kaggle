@@ -38,8 +38,8 @@ test = pd.read_csv(fileDirectory + r'\test.csv')
 
 
 #visualization
-# plt_data_bar(train['MSSubClass'])
-# plt_data_bar(train['MSZoning'])
+plt_data_bar(train['MSSubClass'])
+plt_data_bar(train['MSZoning'])
 
 
 
@@ -53,5 +53,3 @@ for i in range(train.shape[1]):
 scaler = StandardScaler()
 train['MSZoning'] = fillna_nonnumerical(train['MSZoning'])
 train['MSZoning'] = mapping(train['MSZoning'])
-
-
