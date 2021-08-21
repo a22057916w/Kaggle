@@ -32,8 +32,8 @@ def plt_data_bar(series):
 absolutepath = os.path.abspath(__file__)
 fileDirectory = os.path.dirname(absolutepath)
 #load data
-train = pd.read_csv(fileDirectory + r'\train.csv')
-test = pd.read_csv(fileDirectory + r'\test.csv')
+train = pd.read_csv(os.path.join(fileDirectory, 'train.csv'))
+test = pd.read_csv(os.path.join(fileDirectory, 'test.csv'))
 
 
 
